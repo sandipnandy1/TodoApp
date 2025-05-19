@@ -18,8 +18,8 @@ function TodoItem({ todo }) {
 
   return (
     <div
-      className={`flex border border-black/10 rounded-lg px-3 py-1.5 gap-x-3 shadow-sm shadow-white/50 duration-300  text-black ${
-        todo.completed ? "bg-[#b0b1b0] text-gray-600" : "bg-[#b965fa]"
+      className={`flex border border-black/10 rounded-full px-3 py-1.5 gap-x-3 shadow-sm shadow-white/50 duration-300  text-black ${
+        todo.completed ? "bg-[#b0b1b0] text-gray-800" : "bg-gradient-to-r from-[#6fc5dd] to-[#359ab6]"
       }`}
     >
       <input
@@ -32,8 +32,8 @@ function TodoItem({ todo }) {
       />
       <input
         type="text"
-        className={`border outline-none w-full bg-transparent rounded-lg ${
-          isTodoEditable ? "border-black/10 px-2" : "border-transparent"
+        className={`border outline-none w-full bg-transparent rounded-full ${
+          isTodoEditable ? "border-black/10 px-2 bg-slate-200" : "border-transparent"
         } ${todo.completed ? "line-through" : ""}`}
         value={todoMsg}
         onChange={(e) => setTodoMsg(e.target.value)}
@@ -41,7 +41,7 @@ function TodoItem({ todo }) {
       />
       {/* Edit, Save Button */}
       <button
-        className="inline-flex w-8 h-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0 disabled:opacity-50"
+        className="inline-flex mt-0 w-8 h-8 rounded-full text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-200 shrink-0 disabled:opacity-50"
         onClick={handleClick}
         disabled={todo.completed}
       >
@@ -49,7 +49,7 @@ function TodoItem({ todo }) {
       </button>
       {/* Delete Todo Button */}
       <button
-        className="inline-flex w-8 h-8 rounded-lg text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-100 shrink-0"
+        className="inline-flex mt-0 w-8 h-8 rounded-full text-sm border border-black/10 justify-center items-center bg-gray-50 hover:bg-gray-200 shrink-0"
         onClick={() => deleteTodo(todo.id)}
       >
         ❌
