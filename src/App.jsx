@@ -1,12 +1,17 @@
 import { useAuth0 } from "@auth0/auth0-react";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
+import Loading from "./pages/Loading";
 
 function App() {
   const { user, isAuthenticated, isLoading } = useAuth0();
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return (
+      <div>
+        <Loading />
+      </div>
+    );
   }
 
   return isAuthenticated ? (
