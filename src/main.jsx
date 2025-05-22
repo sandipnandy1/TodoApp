@@ -8,8 +8,12 @@ createRoot(document.getElementById('root')).render(
     domain={import.meta.env.VITE_AUTH0_DOMAIN}
     clientId={import.meta.env.VITE_AUTH0_CLIENT_ID}
     authorizationParams={{
+<<<<<<< HEAD
       redirect_uri: 'https://sandipnandy1.github.io/TodoApp/'
       
+=======
+      redirect_uri: window.location.origin
+>>>>>>> parent of 8e8b7e2 (Update main.jsx)
     }}
     >
       <App />
