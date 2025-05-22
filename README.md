@@ -1,12 +1,51 @@
-# React + Vite
+# Todo App 📝
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and efficient **Todo App** built with **React**, using **Context API** for state management and **Auth0** for authentication.
 
-Currently, two official plugins are available:
+## 🔥 Features
+- 🛠️ **State Management** - Powered by React **Context API** for seamless global state management.
+- 🔐 **Auth0 Authentication** - Secure login and authentication using Auth0.
+- ✅ **Task Management** - Add, edit, and delete todos with ease.
+- 🎨 **Responsive Design** - Optimized for desktop and mobile devices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
+- **React** (Frontend)
+- **Context API** (State Management)
+- **Auth0** (Authentication)
+- **Tailwind CSS** (Styling)
+- **Vite** (Development Environment)
 
-## Expanding the ESLint configuration
+## 🛠️ Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/todo-app.git
+   cd todo-app
+
+2. Install dependencies:
+    ```bash
+    npm install
+3. - Configure Auth0:
+- Create an Auth0 account at Auth0
+- Set up an application and retrieve Client ID & Domain
+- Create a .env file in the root directory and add:
+    ```bash
+    VITE_AUTH0_DOMAIN=your-auth0-domain
+    VITE_AUTH0_CLIENT_ID=your-client-id
+
+4. Run the project:
+    ```bash
+    npm run dev
+
+
+🎯 Usage
+- Login with Auth0 to access the app.
+- Create, update, and delete tasks using the intuitive UI.
+- State is managed globally with Context API.
+
+👨‍💻 Contributing
+Contributions are welcome! Feel free to submit issues or pull requests.
+📜 License
+This project is licensed under the MIT License.
+
+Hope this helps! Let me know if you want any modifications. 🚀
